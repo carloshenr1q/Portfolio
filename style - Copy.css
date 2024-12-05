@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* 
+    background: "#020617",
+    emphisis: "#71ff7b",
+    dark: "#141C2F",
+    white: "#E6E6E6",
+    formBorder: "#374151", 
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+}
+:root{
+    --background: #020617,;
+    --emphisis: #71ff7b,;
+    --dark: #141C2F;
+    --white: #E6E6E6;
+    --formBorder: #374151;
+}
+
+
+body{
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(165, 165, 165), rgb(85, 85, 85));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    text-align: center;
+}
+header > picture > img{
+    border-radius: 100%;
+    
+    margin-top: 15px;
+
+    transition: width 1s ease;
+}
+header #eu:hover{
+    width: 220px;
+}
+header #oculto{
+    margin-top: 5px;
+}
+header #nome{
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+
+    padding-bottom: 1px;
+
+    cursor: pointer;
+}
+header #cargo{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+
+    padding-bottom: 8px;
+}
+header #descrição{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 17px;
+    text-align: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: all 2000ms ease-in;
+}
+#oculto:hover > #descrição{
+    opacity: 1;
+    max-height: 230px;
+}
+
+
+main{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+main #escuro{
+    cursor: pointer;
+}
+main h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+#escuro:hover > #obscuro{
+    max-height: 90px;
+    opacity: 1;
+}
+main #obscuro{
+    overflow: hidden;
+
+    max-height: 0;
+
+    opacity: 0;
+
+    transition: all 2000ms ease;
+    
+}
+main .p{
+    font-family: "Noto Sans", sans-serif;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    
+    display: inline-block;
+ 
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+    border-radius: 15px;
+
+    transition: background-color 2000ms ease;
+}
+main .p:hover{
+    background-color: rgb(36, 36, 36);
+}
+main #proj{
+    margin-top: 10px;
+}
+main #preto{
+    cursor: pointer;
+}
+main h3{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+
+    padding-bottom: 5px;
+}
+#preto:hover > .inline{
+    max-height: 230px;
+    opacity: 1;
+}
+main .inline{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: inline-block;
+
+    max-height: 0;
+    opacity: 0;
+
+    transition: all 4000ms ease;
+
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+main .space{
+    padding: 10px;
+}
+main .button{
+    background-color: rgb(107, 107, 107);
+    display: inline-block;
+
+    width: 53%;
+    height: 53%;
+
+    border: 1px solid black;
+    border-radius: 15px;
+
+    padding: 6px;
+    margin-top: 15px;
+
+    transition: background-color 0.5s ease, padding 0.5s ease;
+}
+main .button:hover{
+    background-color: rgb(46, 46, 46);
+    color: black;
+
+    padding: 10px;
+}
+main .botão{
+    color: white;
+    text-decoration: none;
+}
+main #negro{
+    cursor: pointer;
+}
+#negro:hover > #sociais{
+    display: inline-block;
+    max-height: 50px;
+    opacity: 1;
+}
+main #sociais{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 3000ms ease;
+}
+main .redes .img{
+    transition: width 1000ms ease;
+}
+main .redes:hover > .img{
+    width: 35px;
+}
